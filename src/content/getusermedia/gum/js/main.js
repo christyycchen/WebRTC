@@ -9,8 +9,8 @@
 
 // Put variables in global scope to make them available to the browser console.
 const constraints = window.constraints = {
-    video: true,
-    audio: false,
+  audio: false,
+  video: true
 };
 
 function handleSuccess(stream) {
@@ -31,7 +31,7 @@ function handleError(error) {
       'microphone, you need to allow the page access to your devices in ' +
       'order for the demo to work.');
   }
-  errorMsg(`getUserMedia error: ${error.name} ${error.message} test`, error);
+  errorMsg(`getUserMedia error: ${error.name} ${error.message} test2`, error);
 }
 
 function errorMsg(msg, error) {
