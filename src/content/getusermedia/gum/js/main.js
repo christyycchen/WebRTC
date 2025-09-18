@@ -29,7 +29,7 @@ function handleError(error) {
       'microphone, you need to allow the page access to your devices in ' +
       'order for the demo to work.');
   }
-  errorMsg(`getUserMedia error: ${error.name} ${error.message}`, error);
+  errorMsg(`getUserMedia error: ${error.name} ${error.message} test`, error);
 }
 
 function errorMsg(msg, error) {
